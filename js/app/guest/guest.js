@@ -64,7 +64,7 @@ export const guest = (() => {
             const div = document.createElement('div');
             div.classList.add('m-2');
 
-            const template = `<small class="mt-0 mb-1 mx-0 p-0">${util.escapeHtml(guestName?.getAttribute('data-message'))}</small><p class="m-0 p-0" style="font-size: 1.5rem">${util.escapeHtml(name)}</p>`;
+            const template = `<small class="mt-0 mb-1 mx-0 p-0">${util.escapeHtml(guestName?.getAttribute('data-message'))}</small><p class="m-0 p-0" style="font-size: 1.5rem; color: red;">${util.escapeHtml(name)}</p>`;
             util.safeInnerHTML(div, template);
 
             guestName?.appendChild(div);
@@ -177,7 +177,7 @@ export const guest = (() => {
      */
     const buildGoogleCalendar = () => {
         /**
-         * @param {string} d 
+         * @param {string} d
          * @returns {string}
          */
         const formatDate = (d) => (new Date(d + ':00Z')).toISOString().replace(/[-:]/g, '').split('.').shift();

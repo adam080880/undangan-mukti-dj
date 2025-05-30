@@ -103,3 +103,8 @@ html[data-bs-theme="dark"] .bg-white-black {
 .no-gap-bottom {
     margin-bottom: -0.75rem !important;
 }
+
+.welcome-bg {
+    background: url('../assets/images/webp/covermuktiukhti.webp') no-repeat center center;
+    background-size: cover;
+}
