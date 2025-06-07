@@ -29,7 +29,7 @@ export const progress = (() => {
         if (percentage >= 100) {
             percentage = 100;
         }
-        return `${percentage.toFixed(0)}`;
+        return `${percentage.toFixed(0)}%`;
     };
 
     /**
@@ -44,7 +44,11 @@ export const progress = (() => {
 
         loaded += 1;
         info.innerText = `Loading ${showInformation()}`;
-        bar.style.width = Math.min((loaded / total) * 100, 100).toString() + '%';
+        let percentage = Math.min((loaded / total) * 100);
+        if (percentage >= 100) {
+            percentage = 100;
+        }
+        bar.style.width = percentage + '%';
 
         if (loaded === total) {
             document.dispatchEvent(new Event('progress.done'));
