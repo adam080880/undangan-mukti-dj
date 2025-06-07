@@ -15,7 +15,7 @@
         "lint:html": "htmlhint **/*.html",
         "dev": "npx esbuild js/*.js --bundle --outdir=dist --servedir=.",
         "build": "npx esbuild js/*.js --bundle --minify --outdir=dist",
-        "build:public": "npm run build && node -e \"const fs = require('fs-extra'); fs.ensureDir('public').then(() => Promise.all(['assets', 'css', 'dist', 'index.html', 'dashboard.html'].map((f) => fs.copy(f, 'public/' + f)))).then(() => console.log('✅ Successfully!'));\""
+        "build:public": "npm run build && node -e \"const fs = require('fs-extra'); fs.ensureDir('public').then(() => Promise.all(['assets', 'css', 'dist', 'index.html'].map((f) => fs.copy(f, 'public/' + f)))).then(() => console.log('✅ Successfully!'));\""
     },
     "dependencies": {
         "esbuild": "^0.24.2"
