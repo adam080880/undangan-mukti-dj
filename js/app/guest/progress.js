@@ -25,7 +25,11 @@ export const progress = (() => {
      * @returns {string}
      */
     const showInformation = () => {
-        return `(${loaded}/${total}) [${parseInt((loaded / total) * 100).toFixed(0)}%]`;
+        let percentage = Math.min((loaded / total) * 100);
+        if (percentage >= 100) {
+            percentage = 100;
+        }
+        return `${percentage.toFixed(0)}`;
     };
 
     /**
@@ -39,7 +43,7 @@ export const progress = (() => {
         }
 
         loaded += 1;
-        info.innerText = `Loading ${type} ${skip ? 'skipped' : 'complete'} ${showInformation()}`;
+        info.innerText = `Loading ${showInformation()}`;
         bar.style.width = Math.min((loaded / total) * 100, 100).toString() + '%';
 
         if (loaded === total) {

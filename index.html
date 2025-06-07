@@ -65,6 +65,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
     <!-- Dependencies CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous">
@@ -120,7 +121,7 @@
 
                 <!-- Home -->
                 <section id="home" class="bg-light-dark position-relative overflow-hidden p-0 m-0">
-                    <img src="./assets/images/placeholder.webp" data-src="./assets/images/webp/together1.webp" alt="bg" class="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home">
+                    <img src="./assets/images/webp/together1.webp" data-src="./assets/images/webp/together1.webp" alt="bg" class="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home">
 
                     <div class="position-relative text-center">
                         <h1 class="font-esthetic my-4 pt-4 fw-medium" style="font-size: 2.25rem;">Undangan Pernikahan</h1>
@@ -130,11 +131,18 @@
 
                         </div>
                         <h2 class="font-esthetic my-4" style="font-size: 2.25rem;">Mukti &amp; Ukhti</h2>
-                        <p class="my-2" style="font-size: 1.25rem;">Minggu, 22 Juni 2025</p>
+                        <p class="my-2" style="font-size: 1.25rem;">Sabtu, 28 Juni 2025</p>
 
-                        <button class="btn btn-outline-auto btn-sm shadow rounded-pill px-3 py-1" style="font-size: 0.8rem;">
+                        <!-- <button class="btn btn-outline-auto btn-sm shadow rounded-pill px-3 py-1" style="font-size: 0.8rem;">
                             <i class="fa-solid fa-calendar-check me-2"></i>Save Google Calendar
-                        </button>
+                        </button> -->
+                        <a
+                            class="btn btn-outline-auto btn-sm shadow rounded-pill px-3 py-1"
+                            style="font-size: 0.8rem;"
+                            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mukti+Dwi+Jatmoko+dan+Ukhti+Humayra&dates=20250628T010000Z/20250628T140000Z&details=Undangan+Pernikahan+Mukti+Dwi+Jatmoko+dan+Ukhti+Humayra%0APastikan+aktifkan+pengingat+1+hari+sebelum+acara.&location=Jl.+Selada+II+RT+04+RW+011+NO+61,+Pondok+Cabe+Ilir,+Pamulang,+Tangerang+Selatan" target="_blank"
+                        >
+                            <i class="fa-solid fa-calendar-check me-2"></i>Save Google Calendar
+                        </a>
 
                         <div class="d-flex justify-content-center align-items-center mt-4 mb-2">
                             <div class="mouse-animation border border-secondary-subtle border-2 rounded-5 px-2 py-1">
@@ -169,7 +177,7 @@
                     <div class="overflow-x-hidden pb-4">
 
                         <div data-aos="fade-right" data-aos-duration="2000" class="pb-1">
-                            <img src="./assets/images/mukti_bg_biru.webp" data-src="./assets/images/webp/me2.webp" alt="cowo" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto">
+                            <img src="./assets/images/webp/muktidj_cover.webp" data-src="./assets/images/webp/muktidj_cover.webp" alt="cowo" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto">
                             <h2 class="font-esthetic m-0" style="font-size: 2.125rem;">Mukti Dwi Jatmoko, S.Kom</h2>
                             <p class="mt-3 mb-1" style="font-size: 1.25rem;">Putra ke-2</p>
                             <p class="mb-0" style="font-size: 0.95rem;">KEL Bapak Suwarto dan Ibu Warsilah</p>
@@ -196,7 +204,7 @@
                         </div>
 
                         <div data-aos="fade-left" data-aos-duration="2000" class="pb-1">
-                            <img src="./assets/images/ukhti.webp" data-src="./assets/images/webp/istri_candid_2.webp" alt="cewe" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto">
+                            <img src="./assets/images/webp/ukhti_cover_fix.webp" data-src="./assets/images/webp/ukhti_cover_fix.webp" alt="cewe" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto">
                             <h2 class="font-esthetic m-0" style="font-size: 2.125rem;">Ukhti Humayra, S.Kom</h2>
                             <p class="mt-3 mb-1" style="font-size: 1.25rem;">Putri ke-3</p>
                             <p class="mb-0" style="font-size: 0.95rem;">Bapak Alm Ahyani dan Ibu Asbahanim</p>
@@ -275,14 +283,14 @@
                         </div>
 
                         <div class="overflow-x-hidden">
-                            <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
+                            <!-- <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
                                 <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">Akad</h2>
                                 <p style="font-size: 0.95rem;">Pukul 10.00 WIB - Selesai</p>
-                            </div>
+                            </div> -->
 
                             <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
                                 <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">Resepsi</h2>
-                                <p style="font-size: 0.95rem;">Pukul 13.00 WIB - Selesai</p>
+                                <p style="font-size: 0.95rem;">Pukul 08.00 WIB - Selesai</p>
                             </div>
                         </div>
 
@@ -303,8 +311,9 @@
                         </div> -->
 
                         <div class="py-2" data-aos="fade-down" data-aos-duration="1500">
-                            <a href="https://g.co/kgs/YSH9vHb" target="_blank" class="btn btn-outline-auto btn-sm rounded-pill shadow mb-2 px-3"><i class="fa-solid fa-map-location-dot me-2"></i>Lihat Google Maps</a>
-                            <small class="d-block my-1">Batamerah Venue, Jl. Bumi Pancoran Mas No.27B, RT.03/RW.12, Mampang, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16433, Indonesia</small>
+                            <a href="https://maps.app.goo.gl/PGgEs5gw8XG6VCE48" target="_blank" class="btn btn-outline-auto btn-sm rounded-pill shadow mb-2 px-3"><i class="fa-solid fa-map-location-dot me-2"></i>Lihat Google Maps</a>
+                            <small class="d-block my-1">Jl. Selada II RT 04 RW 011 NO 61, Pondok Cabe Ilir, Pamulang, Tangerang Selatan.</small>
+
                         </div>
                     </div>
                 </section>
@@ -403,9 +412,9 @@
                                 <hr class="my-2 py-1">
                                 <img src="./assets/images/placeholder.webp" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1598px-Bank_Central_Asia.svg.png" class="img-fluid p-1 rounded" style="max-width: 9vh; background-color: var(--bs-gray-300);" alt="bca">
                                 <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <p class="m-0 p-0" style="font-size: 0.85rem;"><i class="fa-solid fa-credit-card me-1"></i>1234567891234</p>
+                                    <p class="m-0 p-0" style="font-size: 0.85rem;"><i class="fa-solid fa-credit-card me-1"></i>2670406914</p>
                                     <!-- Ubah juga data-copy sesuai dengan no rekening -->
-                                    <button class="btn btn-outline-auto btn-sm shadow-sm rounded-4 py-0" style="font-size: 0.75rem;" data-copy="1234567891234" onclick="undangan.util.copy(this)"><i class="fa-solid fa-copy"></i></button>
+                                    <button class="btn btn-outline-auto btn-sm shadow-sm rounded-4 py-0" style="font-size: 0.75rem;" data-copy="2670406914" onclick="undangan.util.copy(this)"><i class="fa-solid fa-copy"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -576,9 +585,9 @@
     </div>
 
     <!-- Welcome Page -->
-     <div class="row m-0 p-0 loading-page">
+     <div class="row m-0 p-0 loading-page" id="welcome" style="opacity: 0;">
         <div class="col-lg-5 col-xl-4 col-xxl-3 m-0 p-0 mx-auto">
-            <div class="welcome-bg" id="welcome" style="opacity: 0;">
+            <div class="welcome-bg">
                 <div style="position: relative;" class="d-flex justify-content-center align-items-center vh-100 overflow-y-scroll">
                     <div style="position: absolute; bottom: 50px;" class="d-flex flex-column text-center">
                         <!-- <div style="margin-top: 400px;"></div> -->
