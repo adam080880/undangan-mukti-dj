@@ -132,8 +132,8 @@ export const guest = (() => {
         audio.play();
         theme.spyTop();
 
-        confetti.basicAnimation();
-        util.timeOut(confetti.openAnimation, 1500);
+        // confetti.basicAnimation();
+        // util.timeOut(confetti.openAnimation, 1500);
         util.changeOpacity(document.getElementById('welcome'), false).then((el) => el.remove());
 
     };
